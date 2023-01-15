@@ -1,0 +1,11 @@
+.container{
+  
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .containerHeader{
+    background: red;
+    text-align: center;
+  }
+  
