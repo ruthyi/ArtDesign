@@ -1,0 +1,44 @@
+.containerCategory{
+    padding: 10px 24px;
+}
+.containerCategory > div{
+    width: 313px;
+    height: 165px;
+    border-radius: 20px;
+    font-family: 'Niconne', cursive;
+    font-size: 32px;
+    color: var(--txt-cards);
+    -webkit-text-stroke: 1px var(--bg-header-footer);
+    margin-bottom: 28px;
+}
+
+.containerCategory :nth-child(2):not(h1){
+    border-radius: 20px;
+    background: url("../../assets/SublimationPrint/cups/P1.jpeg");
+    background-repeat : no-repeat;
+    background-size : 313px, 165px;
+}
+.containerCategory :nth-child(3):not(h1){
+    border-radius: 20px;
+    background: url("../../assets/Detail/d16.jpeg");
+    background-repeat : no-repeat;
+    background-size : 313px, 165px;
+}
+.containerCategory :nth-child(4):not(h1){
+    border-radius: 20px;
+    background: url("../../assets/OtherService/Print3D/im1.jpeg");
+    background-repeat : no-repeat;
+    background-size : 313px, 165px;
+}
+.containerCategory :nth-child(1):not(h1){
+    border-radius: 20px;
+    background: url("../../assets/Card/marriage/2.jpg");
+    background-repeat : no-repeat;
+    background-size : 313px, 165px;
+}
+.containerCategory div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

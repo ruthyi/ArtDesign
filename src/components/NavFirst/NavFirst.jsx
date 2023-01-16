@@ -5,7 +5,6 @@ import cart from "../../assets/carrito-de-compras.png"
 import styles from './Nav.module.css'
 export const NavFirst = () => {
   return (
-    <main>
         <nav className={styles.firstNav}>
         <ul className={styles.firstNavUl}>
             <li>
@@ -29,7 +28,6 @@ export const NavFirst = () => {
         </ul>
         <Outlet/>
        </nav>
-    </main>
     
   )
 }

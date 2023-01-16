@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -32,4 +32,21 @@ html, body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.whoIs{
+  margin: auto;
+  text-align: center;
+  padding: 10px 24px; 
+}
+.whoIs :first-child{
+  font-family: 'Pacifico';
+  font-size: 24px;
+  color: var(--txt-hechos-border-nav);
+  -webkit-text-stroke: 1px var(--bg-btn);
+}
+.whoIs :last-child{
+  font-family: 'Moon Dance';
+  font-size: 20px;
+  color: var(--bg-header-footer);
+  -webkit-text-stroke: 0.5px var(--bg-header-footer);
 }
