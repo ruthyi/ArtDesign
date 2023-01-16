@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+:root{
+  --bg-header-footer:#341100;
+  --txt-hechos-border-nav: #B57EDC;
+  --bg-btn:#643C23;
+  --border-txt-title:#996B42;
+  --txt-cards:#FFFFFF;
+  --text-color-nav:#DBB6EE;
+
+}
+html, body{
+  width: auto;
+  height: auto;
+}

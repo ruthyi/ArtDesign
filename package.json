@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-carousel-responsive": "^0.0.31",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.6.2"
   },
   "devDependencies": {

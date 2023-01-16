@@ -4,7 +4,8 @@ import  {NavFirst}  from './components/NavFirst/NavFirst'
 import { Home } from './pages/Home'
 import { Card } from './pages/Card'
 import { SoppingCart } from './pages/SoppingCart'
-import { Banner } from './components/Banner/Banner'
+import {Carrusel } from './components/Banner/Carrusel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './App.css'
 
 
@@ -13,11 +14,12 @@ function App() {
 
   return (
     <main className="App">
-       
+      
       <Routes>
         <Route path='/' element={<NavFirst/>}>
-          <Route path='/' element={<Banner/>}/>
-          <Route path='card' element={<Card/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route
+           path='card' element={<Card/>}/>
           <Route path='shopping-cart' element={<SoppingCart/>}/>
           <Route path='*' element={<Error/>}/>
         </Route>

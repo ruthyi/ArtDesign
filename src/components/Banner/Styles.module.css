@@ -1,11 +1,21 @@
-.container{
-  
-    width: 150px;
-    padding: 10px;
+.photo{
+  width: 100%;
+  height: 198px;
+}
+.photo img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+@media screen and (min-width:744px ) and ( max-width:1439px) {
+  .photo{
+    width: 100%;
+    height: 236px;
   }
-  
-  .containerHeader{
-    background: red;
-    text-align: center;
+}
+@media screen and (min-width:1440px) {
+  .photo{
+    width: 100%;
+    height: 470px;
   }
-  
+}
