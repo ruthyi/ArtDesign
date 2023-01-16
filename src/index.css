@@ -19,3 +19,10 @@ html, body{
   width: auto;
   height: auto;
 }
+/* Home */
+.carousel .thumbs-wrapper{
+  display: none;
+}
+.home{
+  background: var(--txt-cards);
+}

@@ -4,6 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const Home = () => {
   return (
-   <Carrusel/>
+   <div className='home'>
+      <Carrusel/>
+      
+   </div>
   )
 }

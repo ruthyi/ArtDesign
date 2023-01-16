@@ -7,6 +7,9 @@
   width:100%;
   height:100%;
 }
+.photo:-ms-thumb{
+  display: none;
+}
 @media screen and (min-width:744px ) and ( max-width:1439px) {
   .photo{
     width: 100%;
