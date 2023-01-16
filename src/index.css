@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Pacifico&display=swap');
 
 *{
   margin: 0;
@@ -25,4 +26,10 @@ html, body{
 }
 .home{
   background: var(--txt-cards);
+}
+.network{
+  padding: 10px 24px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
