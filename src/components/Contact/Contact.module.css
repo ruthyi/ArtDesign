@@ -1,0 +1,21 @@
+.containerContact :nth-child(1):not(p) {
+    text-align: center;
+    font-family: 'Pacifico';
+    font-size: 25px;
+    line-height: 44px;
+    color: var(--bg-header-footer);
+    -webkit-text-stroke: 1px var(--border-txt-title);
+    margin-bottom: 28px;
+}
+
+.containerContact div:nth-child(3) p {
+    margin-left: 24px;
+    font-family: 'Moon Dance';
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--bg-header-footer);
+    -webkit-text-stroke: 1px var(--bg-header-footer);
+}
+.containerContact div:nth-child(3) p:last-child {
+    margin-bottom: 28px;
+}

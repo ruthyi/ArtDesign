@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Networks } from '../components/SocialMedia/Networks';
 import { ButtonQuote } from '../components/Button/ButtonQuote';
 import { Category } from '../components/Category/Category';
+import { Contact } from '../components/Contact/Contact';
 export const Home = () => {
   return (
    <div className='home'>
@@ -17,6 +18,7 @@ export const Home = () => {
         <p>Interpretamos y diseñamos experiencias que cuentan tu historia de forma personalizada en cada invitación y diseño.</p>
       </section>
       <Category/>
+      <Contact/>
       
    </div>
   )
