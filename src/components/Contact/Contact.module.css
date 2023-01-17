@@ -19,3 +19,18 @@
 .containerContact div:nth-child(3) p:last-child {
     margin-bottom: 28px;
 }
+
+@media screen and (min-width:744px) and (max-width:1439px) {
+    .containerContact :nth-child(1):not(p) {
+        font-size: 35px;
+    }
+  }
+  
+  @media screen and (min-width:1440px) {
+    .containerContact :nth-child(1):not(p) {
+        font-size: 40px;
+    }
+    .containerContact div:nth-child(3) p {
+        font-size: 30px;
+    }
+  }

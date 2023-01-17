@@ -18,8 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<NavFirst/>}>
           <Route path='/' element={<Home/>}/>
-          <Route path='card' element={<Card/>}/>
-          <Route path='shopping-cart' element={<SoppingCart/>}/>
+          <Route path='/card' element={<Card/>}/>
+          <Route path='/shopping-cart' element={<SoppingCart/>}/>
           <Route path='*' element={<Error/>}/>
         </Route>
       </Routes>

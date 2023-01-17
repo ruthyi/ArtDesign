@@ -1,46 +1,48 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import photo1 from "../../assets/Card/marriage/22.jpg"
-import photo2 from "../../assets/Card/marriage/21.jpg"
-import photo3 from "../../assets/Card/marriage/22.jpg"
-import photo4 from "../../assets/Card/marriage/23.jpg"
-import photo5 from "../../assets/Card/marriage/3.jpg"
-import photo6 from "../../assets/Card/marriage/2.jpg"
+import photo1 from "../../assets/Card/carrusel/1.jpeg"
+import photo2 from "../../assets/Card/carrusel/2.jpeg"
+import photo3 from "../../assets/Card/carrusel/3.jpeg"
+import photo4 from "../../assets/Card/carrusel/4.jpeg"
+import photo5 from "../../assets/Card/carrusel/5.jpeg"
+import photo6 from "../../assets/Card/carrusel/6.jpeg"
+import photo7 from "../../assets/Card/carrusel/7.jpeg"
+import photo8 from "../../assets/Card/carrusel/8.jpeg"
 import carousels from './Styles.module.css'
 export const Carrusel = () => {
   return (
     <Carousel autoPlay>
     <div className={carousels.photo}>
       <img alt="" src={photo1} />
-      <p className="legend">Legend 1</p>
+      <p>Presentamos una opcion muy versátil, que te ayudará a tener una mejor idea del tipo de invitación que quieres.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo2} />
-      <p className="legend">Legend 2</p>
+      <p >Interpretamos los sueños de nuestras quinceañeras segun la tematica dando una armonia de calidad.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo3} />
-      <p className="legend">Legend 3</p>
+      <p >Para nuestros cumpleaños creamos segun el mensaje de nuestra tematica.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo4} />
-      <p className="legend">Legend 4</p>
+      <p >Elaboramos botellitas todas las ocasiones tipo recordatorios hechas a mano y con amor.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo5} />
-      <p className="legend">Legend 5</p>
+      <p >Para nuestro Bautizos trabajamos segun los tonos de nuestros bebes dadndo esa armonia a nuestros seres queridos.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo6} />
-      <p className="legend">Legend 6</p>
+      <p >Trabajamos para aquellas personas que ya no estan con nosotros dando esos detalles de luz y armonia para ser recordado.</p>
     </div>
     <div className={carousels.photo}>
-      <img alt="" src={photo1} />
-      <p className="legend">Legend 7</p>
+      <img alt="" src={photo7} />
+      <p >Nuestros grados los hacemos unicos y inolvidables.</p>
     </div>
     <div className={carousels.photo}>
-      <img alt="" src={photo2} />
-      <p className="legend">Legend 8</p>
+      <img alt="" src={photo8} />
+      <p >Diseñamos rompecabezas para toda ocasion dando ese toque de union familiar.</p>
     </div>
     
   </Carousel>

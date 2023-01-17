@@ -1,7 +1,8 @@
-.containerCategory{
+.containerCategory {
     padding: 0px 24px;
 }
-.containerCategory > div{
+
+.containerCategory>div {
     margin: auto;
     width: 313px;
     height: 165px;
@@ -13,33 +14,52 @@
     margin-bottom: 28px;
 }
 
-.containerCategory :nth-child(2):not(h1){
+.containerCategory :nth-child(2):not(h1) {
     border-radius: 20px;
     background: url("../../assets/SublimationPrint/cups/P1.jpeg");
-    background-repeat : no-repeat;
-    background-size : 313px, 165px;
+    background-repeat: no-repeat;
+    background-size: 313px, 165px;
 }
-.containerCategory :nth-child(3):not(h1){
+
+.containerCategory :nth-child(3):not(h1) {
     border-radius: 20px;
     background: url("../../assets/Detail/d16.jpeg");
-    background-repeat : no-repeat;
-    background-size : 313px, 165px;
+    background-repeat: no-repeat;
+    background-size: 313px, 165px;
 }
-.containerCategory :nth-child(4):not(h1){
+
+.containerCategory :nth-child(4):not(h1) {
     border-radius: 20px;
     background: url("../../assets/OtherService/Print3D/im1.jpeg");
-    background-repeat : no-repeat;
-    background-size : 313px, 165px;
+    background-repeat: no-repeat;
+    background-size: 313px, 165px;
 }
-.containerCategory :nth-child(1):not(h1){
+
+.containerCategory :nth-child(1):not(h1) {
     border-radius: 20px;
     background: url("../../assets/Card/marriage/2.jpg");
-    background-repeat : no-repeat;
-    background-size : 313px, 165px;
+    background-repeat: no-repeat;
+    background-size: 313px, 165px;
 }
-.containerCategory div{
+
+.containerCategory div {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width:744px) and (max-width:1439px) {
+    .containerCategory {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .containerCategory {
+        display: none;
+    }
 }

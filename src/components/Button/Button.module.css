@@ -8,6 +8,7 @@
     height: 30px;
     border-radius: 20px;
     -webkit-text-stroke: 0.3px var(--bg-header-footer);
+    transition: 0.5s all; 
 }
 
 .quote:hover {
@@ -21,6 +22,18 @@
     color: var(--text-color-nav);
     text-decoration: none;
 }
+@media screen and (min-width:1440px) {
+    .quote{
+        width: 117px;
+        height: 36px;
+        font-size: 22px;
+        padding-bottom: 10px;
+        -webkit-text-stroke: 0.5px var(--bg-header-footer);
+    }
+    .quote:hover {
+        -webkit-text-stroke: 0.5px var(--txt-cards);
+    }
+}
 
 .lastQuote {
     font-family: 'Pacifico';
@@ -29,9 +42,10 @@
     width: 179px;
     height: 50px;
     border-radius: 20px;
-    -webkit-text-stroke: 1px var(--txt-cards);
+    -webkit-text-stroke: 0.8px var(--txt-cards);
     background: var(--bg-btn);
     margin-bottom: 28px;
+    transition: 0.5 all; 
 }
 .lastQuote a:link,
 .lastQuote a:visited {

@@ -1,24 +1,62 @@
-.photo{
+.photo {
   width: 100%;
   height: 198px;
 }
-.photo img{
+
+.photo img {
   object-fit: cover;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
-.photo:-ms-thumb{
+
+.photo:-ms-thumb {
   display: none;
 }
-@media screen and (min-width:744px ) and ( max-width:1439px) {
-  .photo{
+
+.photo>p {
+  font-family: 'Caveat', cursive;
+  color: #B57EDC;
+  -webkit-text-stroke: 0.5px var(--bg-header-footer);
+  font-size: 20px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  opacity: 0.25;
+  -webkit-transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -ms-transition: opacity .35s ease-in-out;
+  -o-transition: opacity .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.photo>p:hover {
+  background: rgba(232, 232, 232, 0.782);
+  opacity: 1;
+}
+
+@media screen and (min-width:744px) and (max-width:1439px) {
+  .photo {
     width: 100%;
     height: 236px;
   }
+  .photo>p{
+    font-size: 25px;
+    -webkit-text-stroke: 0.8px var(--bg-header-footer);
+  }
 }
+
 @media screen and (min-width:1440px) {
-  .photo{
+  .photo {
     width: 100%;
     height: 470px;
+  }
+  .photo>p{
+    font-size: 30px;
+    -webkit-text-stroke: 1px var(--bg-header-footer);
   }
 }
