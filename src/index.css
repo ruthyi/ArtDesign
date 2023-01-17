@@ -50,3 +50,9 @@ html, body{
   color: var(--bg-header-footer);
   -webkit-text-stroke: 0.5px var(--bg-header-footer);
 }
+.btn-last{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,4 +1,4 @@
-.quote{
+.quote {
     font-family: 'Pacifico';
     font-style: normal;
     font-size: 14px;
@@ -9,13 +9,37 @@
     border-radius: 20px;
     -webkit-text-stroke: 0.3px var(--bg-header-footer);
 }
-.quote:hover{
-     -webkit-text-stroke: 0.1px var(--txt-cards);
-     -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer); 
-     box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+
+.quote:hover {
+    -webkit-text-stroke: 0.1px var(--txt-cards);
+    -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+    box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
 }
+
 .quote a:link,
 .quote a:visited {
-        color: var(--text-color-nav);
-        text-decoration: none;
+    color: var(--text-color-nav);
+    text-decoration: none;
+}
+
+.lastQuote {
+    font-family: 'Pacifico';
+    font-size: 25px;
+    line-height: 44px;
+    width: 179px;
+    height: 50px;
+    border-radius: 20px;
+    -webkit-text-stroke: 1px var(--txt-cards);
+    background: var(--bg-btn);
+    margin-bottom: 28px;
+}
+.lastQuote a:link,
+.lastQuote a:visited {
+    color: var(--text-color-nav);
+    text-decoration: none;
+}
+.lastQuote:hover {
+    -webkit-text-stroke: 1px var(--txt-hechos-border-nav);
+    -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+    box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
 }

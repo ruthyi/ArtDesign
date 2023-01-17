@@ -4,7 +4,7 @@ import  {NavFirst}  from './components/NavFirst/NavFirst'
 import { Home } from './pages/Home'
 import { Card } from './pages/Card'
 import { SoppingCart } from './pages/SoppingCart'
-import {Carrusel } from './components/Banner/Carrusel'
+import { Footer } from './components/footer/Footer'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './App.css'
 
@@ -23,6 +23,7 @@ function App() {
           <Route path='*' element={<Error/>}/>
         </Route>
       </Routes>
+      <Footer/>
     </main>
   )
 }
