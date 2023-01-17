@@ -1,10 +1,10 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import styles from './NavSecond.module.css'
-export const NavFirst = () => {
+export const NavSecond = () => {
   return (
-        <nav className={styles.firstNav}>
-        <ul className={styles.firstNavUl}>
+        <nav className={styles.secondNav}>
+        <ul className={styles.secondtNavUl}>
             <li>
                 <Link to="/card/bodas">Bodas</Link>
             </li>

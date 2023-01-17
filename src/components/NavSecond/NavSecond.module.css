@@ -1,0 +1,37 @@
+.secondNav {
+    background: var(--text-color-nav);
+    height: auto;
+}
+.secondtNavUl{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows:minmax(36px, auto);
+}
+.secondtNavUl li {
+    list-style: none;
+    font-family: 'Moon Dance';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid var( --txt-cards);
+    -webkit-text-stroke: 0.5px var(--txt-hechos-border-nav);
+}
+.secondtNavUl  li:last-child{
+    grid-column: 1 / 4;
+}
+@media screen and (min-width:744px) and (max-width:1439px) {
+    .secondtNavUl{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows:minmax(36px, auto);
+    }
+    .secondtNavUl li {
+        font-size: 20px;
+   }
+    .secondtNavUl  li:last-child{
+        grid-column: 7/9;
+    }
+  }
