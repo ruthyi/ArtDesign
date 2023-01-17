@@ -3,6 +3,17 @@
     width: auto;
     padding: 20px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin: auto;
+}
+.containerFooter a{
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+}
+
+.containerFooter a:link,
+.containerFooter a:visited {
+        color: var(--txt-cards);
+        text-decoration: none;
 }

@@ -14,33 +14,34 @@
     margin-bottom: 28px;
 }
 
-.containerCategory :nth-child(2):not(h1) {
+.containerCategory div:nth-child(2) {
     border-radius: 20px;
     background: url("../../assets/SublimationPrint/cups/P1.jpeg");
     background-repeat: no-repeat;
     background-size: 313px, 165px;
 }
 
-.containerCategory :nth-child(3):not(h1) {
+.containerCategory div:nth-child(3) {
     border-radius: 20px;
     background: url("../../assets/Detail/d16.jpeg");
     background-repeat: no-repeat;
     background-size: 313px, 165px;
 }
 
-.containerCategory :nth-child(4):not(h1) {
+.containerCategory div:nth-child(4) {
     border-radius: 20px;
     background: url("../../assets/OtherService/Print3D/im1.jpeg");
     background-repeat: no-repeat;
     background-size: 313px, 165px;
 }
 
-.containerCategory :nth-child(1):not(h1) {
+.containerCategory div:nth-child(1) {
     border-radius: 20px;
     background: url("../../assets/Card/marriage/2.jpg");
     background-repeat: no-repeat;
     background-size: 313px, 165px;
 }
+
 
 .containerCategory div {
     text-align: center;
@@ -48,6 +49,10 @@
     justify-content: center;
     align-items: center;
 }
+.containerCategory a:link,
+.containerCategory a:visited {
+        color: var(--txt-cards);
+    }
 
 @media screen and (min-width:744px) and (max-width:1439px) {
     .containerCategory {

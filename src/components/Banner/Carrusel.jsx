@@ -22,7 +22,7 @@ export const Carrusel = () => {
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo3} />
-      <p >Para nuestros cumpleaños creamos segun el mensaje de nuestra tematica.</p>
+      <p >Para nuestros cumpleañeros creamos según el mensaje de la tematica del evento.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo4} />
@@ -30,7 +30,7 @@ export const Carrusel = () => {
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo5} />
-      <p >Para nuestro Bautizos trabajamos segun los tonos de nuestros bebes dadndo esa armonia a nuestros seres queridos.</p>
+      <p >Para nuestro Bautizos trabajamos según los tonos de nuestros bebes dando esa armonia a nuestros seres queridos.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo6} />
@@ -38,11 +38,11 @@ export const Carrusel = () => {
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo7} />
-      <p >Nuestros grados los hacemos unicos y inolvidables.</p>
+      <p >Nuestros grados los hacemos unicos e inolvidables.</p>
     </div>
     <div className={carousels.photo}>
       <img alt="" src={photo8} />
-      <p >Diseñamos rompecabezas para toda ocasion dando ese toque de union familiar.</p>
+      <p >Diseñamos rompecabezas para toda ocasión dando ese toque de union familiar.</p>
     </div>
     
   </Carousel>

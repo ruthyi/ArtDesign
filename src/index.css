@@ -23,6 +23,11 @@ html, body{
   width: auto;
   height: auto;
 }
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
 /*-------------------------------- Home ---------------------------------------*/
 .carousel .thumbs-wrapper{
   display: none;
@@ -76,3 +81,5 @@ html, body{
     font-size: 35px;
   }
 }
+
+/*-------------------------------- Cards ---------------------------------------*/
