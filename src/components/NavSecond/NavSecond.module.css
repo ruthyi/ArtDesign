@@ -22,6 +22,9 @@
 .secondtNavUl  li:last-child{
     grid-column: 1 / 4;
 }
+.secondtNavUl a:hover{
+    -webkit-text-stroke: 0.5px var(--border-txt-title);
+}
 @media screen and (min-width:744px) and (max-width:1439px) {
     .secondtNavUl{
         display: grid;

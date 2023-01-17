@@ -1,35 +1,137 @@
 import React from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { useState } from "react";
 import styles from './NavSecond.module.css'
+import { ListCategory } from '../Category/ListCategory';
+
 export const NavSecond = () => {
-  return (
+    const [clickAll, setClickAll] = useState(true);
+    const [clickWedding, setClickWedding] = useState(false);
+    const [clickFifteenYears, setClickFifteenYears] = useState(false);
+    const [clickDegrees, setClickDegrees] = useState(false);
+    const [clickBabyShower, setClickBabyShower] = useState(false);
+    const [clickBirthday, setClickBirthday] = useState(false);
+    const [clickBaptisms, setClickBaptisms] = useState(false);
+    const [clickFirstCommunions, setClickFirstCommunions] = useState(false);
+    function clicks(num) {
+        console.log("entro");
+        setClickWedding(false);
+        setClickFifteenYears(false);
+        setClickDegrees(false);
+        setClickBabyShower(false);
+        setClickBirthday(false);
+        setClickBaptisms(false);
+        setClickFirstCommunions(false);
+        switch (num) {
+            case 1:
+                setClickAll(false);
+                setClickWedding(true);
+                break;
+            case 2:
+                setClickAll(false);
+                setClickFifteenYears(true);
+                break;
+            case 3:
+                setClickAll(false);
+                setClickDegrees(true);
+                break;
+            case 4:
+                setClickAll(false);
+                setClickBabyShower(true);
+                break;
+            case 5:
+                setClickAll(false);
+                setClickBirthday(true);
+                break;
+            case 6:
+                setClickAll(false);
+                setClickBaptisms(true);
+                break;
+            case 7:
+                setClickAll(false);
+                setClickFirstCommunions(true);
+                break;
+            default:
+                console.log("sorry");
+                break;
+        }
+    }
+    return (
+
         <nav className={styles.secondNav}>
-        <ul className={styles.secondtNavUl}>
-            <li>
-                <Link to="/card/bodas">Bodas</Link>
-            </li>
-            <li>
-                <Link to="/card/quinces">Quince Años</Link>
-            </li>
-            <li>
-                <Link to="/card/grados">Grados</Link>
-            </li>
-            <li>
-                <Link to="/card/babyShower">Baby Shower</Link>
-            </li>
-            <li>
-                <Link to="/card/babyShower">Cumpleaños</Link>
-            </li>
-            <li>
-                <Link to="/card/bautixzos">Bautizos</Link>
-            </li>
-            <li>
-                <Link to="/card/primerasComuniones">Primeras Comuniones</Link>
-            </li>
-            
-        </ul>
-        <Outlet/>
-       </nav>
-    
-  )
+            <ul className={styles.secondtNavUl}>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(1);
+                    }
+                    }>Bodas </a>
+                </li>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(2);
+                    }
+                    }>Quince Años</a>
+
+                </li>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(3);
+                    }
+                    }>Grados</a>
+                </li>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(4);
+                    }
+                    }>Baby Shower </a>
+                </li>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(5);
+                    }
+                    }>Cumpleaños </a>
+                </li>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(6);
+                    }
+                    }>Bautizos </a>
+                </li>
+                <li>
+                    <a onClick={() => {
+                        console.log("entro")
+                        clicks(7);
+                    }
+                    }>Primeras Comuniones </a>
+                </li>
+
+            </ul>
+            <div>
+                {clickAll ? <ListCategory name="all" /> : console.log("1" )
+                }
+                {clickWedding ? <ListCategory name="wedding"/> : console.log("2" )
+                }
+                {clickFifteenYears ? <ListCategory name="fifteenYears"/> : console.log("3")
+                }
+                {clickDegrees ? <ListCategory name="degrees"/> : console.log("4" )
+                }
+                {clickBabyShower ? <ListCategory name="babyShower" /> : console.log("5" )
+                }
+                {clickBirthday ? <ListCategory name="birthday"/> : console.log("6" )
+                }
+                {
+                 clickBaptisms ? <ListCategory name="baptisms" /> : console.log("7" )
+                }
+                {
+                 clickFirstCommunions ? <ListCategory name="firstCommunions" /> : console.log("8")
+                }
+            </div>
+        </nav>
+
+    )
 }
