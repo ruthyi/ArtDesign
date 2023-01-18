@@ -112,23 +112,23 @@ export const NavSecond = () => {
 
             </ul>
             <div>
-                {clickAll ? <ListCategory name="all" /> : console.log("1" )
+                {clickAll ? <ListCategory nameFilter="all" /> : console.log("1" )
                 }
-                {clickWedding ? <ListCategory name="wedding"/> : console.log("2" )
+                {clickWedding ? <ListCategory nameFilter="wedding"/> : console.log("2" )
                 }
-                {clickFifteenYears ? <ListCategory name="fifteenYears"/> : console.log("3")
+                {clickFifteenYears ? <ListCategory nameFilter="fifteenYears"/> : console.log("3")
                 }
-                {clickDegrees ? <ListCategory name="degrees"/> : console.log("4" )
+                {clickDegrees ? <ListCategory nameFilter="degrees"/> : console.log("4" )
                 }
-                {clickBabyShower ? <ListCategory name="babyShower" /> : console.log("5" )
+                {clickBabyShower ? <ListCategory nameFilter="babyShower" /> : console.log("5" )
                 }
-                {clickBirthday ? <ListCategory name="birthday"/> : console.log("6" )
-                }
-                {
-                 clickBaptisms ? <ListCategory name="baptisms" /> : console.log("7" )
+                {clickBirthday ? <ListCategory nameFilter="birthday"/> : console.log("6" )
                 }
                 {
-                 clickFirstCommunions ? <ListCategory name="firstCommunions" /> : console.log("8")
+                 clickBaptisms ? <ListCategory nameFilter="baptisms" /> : console.log("7" )
+                }
+                {
+                 clickFirstCommunions ? <ListCategory nameFilter="firstCommunions" /> : console.log("8")
                 }
             </div>
         </nav>
