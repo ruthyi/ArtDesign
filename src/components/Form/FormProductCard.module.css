@@ -20,15 +20,15 @@ input[type=number] {
     border-bottom: 2px solid var(--bg-header-footer);
 }
 
-.containerInput input {
+input {
     width: 100%;
     border: none;
 }
 
 .containerSectionForm {
     display: flex;
-   justify-content: flex-start;
-   align-items: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
@@ -45,14 +45,7 @@ input[type=number] {
     width: 60px;
 }
 
-.changeNumber ::placeholder, .containerSectionForm input{
-    font-family: 'Pacifico';
-    font-size: 18px;
-    line-height: 35px;
-    text-align: center;
-    color: var(--txt-hechos-border-nav);
-    -webkit-text-stroke: 1px black;
-}
+
 
 .changeNumber button {
     background: none;
@@ -63,10 +56,50 @@ input[type=number] {
     color: var(--bg-btn);
     -webkit-text-stroke: 1px black;
 }
-.price{
+
+.price {
     display: flex;
     font-family: 'Pacifico';
     font-size: 1rem;
+    line-height: 35px;
+    text-align: center;
+    color: var(--txt-hechos-border-nav);
+    -webkit-text-stroke: 0.8px black;
+}
+
+.btnAddCart {
+    margin-top: 10px;
+    padding: 2px 0px;
+    width: 100%;
+    height: auto;
+    background: #996B42;
+    border-radius: 0px 20px 20px 0px;
+    font-family: 'Pacifico';
+    font-size: 12px;
+    line-height: 21px;
+    color: var(--text-color-nav);
+    -webkit-text-stroke: 0.7px var(--bg-header-footer);
+}
+
+.nota {
+    margin-top: 10px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5px;
+    line-height: 6px;
+    text-align: justify;
+    color: rgba(52, 17, 0, 0.5);
+
+}
+.containerInput input{
+    font-family: 'Moon Dance';
+    font-size: 1.2rem;
+    color: var(--bg-header-footer);
+}
+.changeNumber input{
+    font-family: 'Pacifico';
+    font-size: 18px;
     line-height: 35px;
     text-align: center;
     color: var(--txt-hechos-border-nav);

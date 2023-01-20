@@ -116,5 +116,24 @@
     line-height: 16px;
     text-align: center;
     color: var(--bg-header-footer);
+    margin-bottom: 10px;
 }
 
+@media screen and (min-width:744px) and (max-width:1439px) {
+    .containerCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+  }
+  
+  @media screen and (min-width:1440px) {
+    .containerCards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+  }
