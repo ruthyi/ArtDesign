@@ -8,7 +8,7 @@ export const CategoryCards = (props) => {
         <div>
             <img src={url} alt={name} />
         </div>
-        <div>
+        <div className={style.divCategoricard}>
             <h2>{name}</h2>
             <p>{id}</p>
             <FormProductCard price={price} detail={detail}/>
