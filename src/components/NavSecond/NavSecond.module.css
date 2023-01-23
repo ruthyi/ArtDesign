@@ -48,3 +48,17 @@
         grid-column: 7/9;
     }
   }
+
+  @media screen and (min-width:1440px) {
+    .secondtNavUl{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows:minmax(36px, auto);
+    }
+    .secondtNavUl li {
+        font-size: 20px;
+   }
+    .secondtNavUl  li:last-child{
+        grid-column: 7/9;
+    }
+  }

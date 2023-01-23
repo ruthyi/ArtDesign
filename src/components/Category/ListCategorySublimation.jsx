@@ -38,9 +38,7 @@ export const ListCategorySublimation = (props) => {
 
         }))
       }
-      <div className="">
 
-      </div>
     </section>
 
   )

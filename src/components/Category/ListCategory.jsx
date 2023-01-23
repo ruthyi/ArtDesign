@@ -62,9 +62,6 @@ export const ListCategory = (props) => {
 
         }))
       }
-      <div className="">
-
-      </div>
     </section>
 
   )

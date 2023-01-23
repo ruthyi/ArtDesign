@@ -32,9 +32,7 @@ export const ListCategoryDetail = (props) => {
 
         }))
       }
-      <div className="">
 
-      </div>
     </section>
 
   )
