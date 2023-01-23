@@ -10,7 +10,7 @@ export const CategoryCards = (props) => {
         </div>
         <div className={style.divCategoricard}>
             <h2>{name}</h2>
-            <p>{id}</p>
+            <p className={style.divCategoricardP}>{id}</p>
             <FormProductCard price={price} detail={detail} id={id} name={name} url={url}/>
         </div>
 

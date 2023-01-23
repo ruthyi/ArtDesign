@@ -20,20 +20,20 @@ function CalculatorPrice(con, price) {
     }
 }
 
-const initialState = [
-    {
-        name: "juan & martha",
-        count: "2",
-        price: "10000",
-        finishPrice: "20000",
-        id: "22-3",
-        nameCategory: "Tarjetas de Bodas",
-        url: "https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2FBodas%2F10000%20(3).jpg?alt=media&token=aa5ecb50-41a2-47af-9afa-7e68eb595392"
-    }]
+// const initialState = [
+//     {
+//         name: "juan & martha",
+//         count: "2",
+//         price: "10000",
+//         finishPrice: "20000",
+//         id: "22-3",
+//         nameCategory: "Tarjetas de Bodas",
+//         url: "https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2FBodas%2F10000%20(3).jpg?alt=media&token=aa5ecb50-41a2-47af-9afa-7e68eb595392"
+//     }]
 
 const userSlice = createSlice({
     name: "tasks",
-    initialState,
+    initialState:[],
     reducers: {
         addTask: (state, action) => {
             state.push(action.payload);

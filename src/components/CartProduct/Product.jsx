@@ -6,6 +6,7 @@ import { deleteTask } from '../../features/tasks/taskSlice'
 import { editTask } from '../../features/tasks/taskSlice'
 import { editCounterIncrement } from '../../features/tasks/taskSlice'
 import { editCounterDecrement } from '../../features/tasks/taskSlice'
+import Swal from 'sweetalert2'
 export const Product = (props) => {
 
   const { product: { name, count, price, finishPrice, id, nameCategory, url } } = props;
@@ -15,6 +16,14 @@ export const Product = (props) => {
 
   const handleDelete = (id) => {
     dispatch(deleteTask(id))
+    Swal.fire({
+      text: 'Producto Eliminado del Carrito',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2Fcart.png?alt=media&token=9fb689d7-0ca5-4f0e-85af-2a63a3656d82',
+      imageWidth: 50,
+      imageHeight: 50,
+      imageAlt: 'Shopping Cart',
+      background:'#000000'
+    })
   }
   const handleUpdate = (e) => {
     if (e.target.name == "name") {

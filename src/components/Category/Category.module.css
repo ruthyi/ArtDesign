@@ -110,7 +110,7 @@
     -webkit-text-stroke: 0.5px var(--bg-header-footer);
 }
 
-.categoryCards div>p {
+.divCategoricardP {
     font-family: 'Moon Dance';
     font-size: 12px;
     line-height: 16px;
