@@ -29,7 +29,7 @@ export const ListProducts = () => {
             ____________________________________________________________________________________________________________
             Valor Total del producto ${x}`;
 
-            const url = `https://api.whatsapp.com/send?phone=573123966824&text=${encodeURIComponent(mensaje)}`;
+            const url = `https://api.whatsapp.com/send?phone=573209972620&text=${encodeURIComponent(mensaje)}`;
             window.open(url,'_blank');
         }
     }
