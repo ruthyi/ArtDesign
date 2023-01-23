@@ -1,77 +1,105 @@
 import React from 'react'
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import styleForm from './FormProductCard.module.css'
-function LastPrice(props) {
-    if(props.counter<12){
-        return (
-            <div className={styleForm.price}>
-                <h1>$</h1>
-                <h1>{props.counter*props.lastPrice}</h1>
-            </div>
-        )
-    }else if (props.counter >= 12 && props.counter < 24) {
-        const valor=(props.lastPrice-((props.lastPrice*5)/100))
-        return (
-            <div className={styleForm.price}>
-                <h1>$</h1>
-                <h1>{valor*props.counter}</h1>
-            </div>
-        )
-    } else if (props.counter >=24 && props.counter < 36) {
-        const valor=(props.lastPrice-((props.lastPrice*10)/100))
-        return (
-            <div className={styleForm.price}>
-                <h1>$</h1>
-                <h1>{valor*props.counter}</h1>
-            </div>
-        )
-    }else  {
-        const valor=(props.lastPrice-((props.lastPrice*15)/100))
-        return (
-            <div className={styleForm.price}>
-                <h1>$</h1>
-                <h1>{valor*props.counter}</h1>
-            </div>
-        )
+import { useSelector } from 'react-redux'
+import { addTask } from '../../features/tasks/taskSlice';
+
+function CalculatorPrice(con, price){
+    let valor=0;
+    if (con < 12) {
+        valor = price;
+        return (valor * con);
+
+    } else if (con >= 12 && con < 24) {
+        valor = (price - ((price * 5) / 100));
+        return (valor * con);
+
+    } else if (con >= 24 && con < 36) {
+        valor = (price - ((price * 10) / 100));
+        return (valor * con);
+
+    } else {
+        valor = (price - ((price * 15) / 100));
+        return (valor * con);
     }
 }
 
 
-export const FormProductCard = (props) => {
-    const { price, detail } = props;
-    const [lastPrice, setLastPrice] = useState(price)
-    const [counter, setCounter] = useState(1)
 
-    function onSubmitbtn(e){
-        e.preventDefault()
+export const FormProductCard = (props) => {
+    const { price, detail, id, name, url } = props;
+    const [lastPrice, setLastPrice] = useState(price);
+    const [counter, setCounter] = useState(1);
+    const dispatch = useDispatch();
+
+
+
+    const [card, setCard] = useState({
+        name: "",
+        count: "",
+        price: "",
+        finishPrice: "",
+        id: "",
+        nameCategory: "",
+        url: ""
+
+    })
+    const handleChange = event => {
+        let con=0;  
+        if(event.target.name=="count"){
+            con=event.target.value;
+            console.log(con);
+        }
+        let operacion=CalculatorPrice(con, price);
+
+        setCard({
+            ...card,
+            [event.target.name]: event.target.value,
+            price: price,
+            finishPrice: operacion,
+            id: id,
+            nameCategory: name,
+            url: url
+        })
+        setCounter(con)
+        setLastPrice(operacion);
+            
+            
+        // console.log(event.target.name, event.target.value)
+        
     }
-    const clickBtnAdd=(counter)=>{
+    const handleSubmit = (e) => {
+        e.preventDefault();
+         console.log(card)
+        dispatch(addTask(card))
+    }
+    const clickBtnAdd = (counter) => {
         setCounter(counter + 1);
     }
-    const clickBtnRest=(counter)=>{
-        if(counter>0){
+    const clickBtnRest = (counter) => {
+        if (counter > 0) {
             setCounter(counter - 1);
         }
     }
+
+
+
     return (
-        <form onSubmit={onSubmitbtn} >
+        <form onSubmit={handleSubmit}>
             <div className={styleForm.containerInput}>
-                <input type="text" name="name" placeholder={detail}  required/>
+                <input type="text" name="name" placeholder={detail} onChange={handleChange} required />
             </div>
             <div className={styleForm.containerSectionForm}>
-                <div className={styleForm.changeNumber}>
-                    <button onClick={() => {
-                        clickBtnRest(counter);
-                    }}>-</button>
-                    <input className={styleForm.inputnum} name="price" type="number" min="1" value={counter}  />
-                    <button onClick={() => { 
-                        clickBtnAdd(counter);
-                         }}>+</button>
+            <input name="count" type="text" min="1" placeholder="1" onChange={handleChange} required/>
+            <div className={styleForm.price}>
+                    <h1>$</h1>
+                    <h1>{lastPrice}</h1>
                 </div>
-                <LastPrice lastPrice={lastPrice} counter={counter}/>
             </div>
+
             <p className={styleForm.nota}>
-            Por compra una docena tiene el 5% de descuento, por dos docenas el 10% de descuento y por 3 docenas el 15% de descuento.
+                Por compra una docena tiene el 5% de descuento, por dos docenas el 10% de descuento y por 3 docenas el 15% de descuento.
             </p>
             <input className={styleForm.btnAddCart} name="submit" type="submit" value="Agregar al Carrito" />
         </form>

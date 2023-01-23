@@ -24,7 +24,7 @@
 html,
 body {
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
 a:link,
@@ -117,4 +117,26 @@ a:visited {
   color: var(--bg-header-footer);
   -webkit-text-stroke: 0.5px var(--bg-header-footer);
   padding: 20px 20px;
+}
+
+/* -------------------ShoppingCart-------------------------- */
+.shoppingCart {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.shoppingCartImg {
+  width: 100px;
+  height: 100px;
+}
+
+.shoppingCart h1 {
+  font-family: 'Pacifico';
+  font-size: 25px;
+  line-height: 44px;
+  color: var(--bg-header-footer);
+  -webkit-text-stroke: 0.8px  var(--border-txt-title);
 }

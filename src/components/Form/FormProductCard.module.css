@@ -38,24 +38,6 @@ input {
     border: none;
 }
 
-.changeNumber {
-    border-bottom: 2px solid var(--bg-header-footer);
-    display: flex;
-    justify-content: space-between;
-    width: 60px;
-}
-
-
-
-.changeNumber button {
-    background: none;
-    border: none;
-    border-bottom: none;
-    font-family: 'Pacifico';
-    font-size: 20px;
-    color: var(--bg-btn);
-    -webkit-text-stroke: 1px black;
-}
 
 .price {
     display: flex;
@@ -84,8 +66,6 @@ input {
 .nota {
     margin-top: 10px;
     font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 5px;
     line-height: 6px;
     text-align: justify;

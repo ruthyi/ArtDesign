@@ -1,10 +1,10 @@
 export const dataCards =[
     {
-        id: "1",
+        id: "21-1",
         filter: "wedding",
         name: "Tarjeta de Bodas",
-        url: "#",
-        price: "9000",
+        url: "https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2FBodas%2F10000%20(2).jpg?alt=media&token=500ee4f0-aff8-4d43-9a75-325dea4d1d1f",
+        price: "10000",
         detail:"Nombre de la pareja"
       }, {
         id: "22-1",
@@ -92,11 +92,68 @@ export const dataCards =[
         detail:"Nombre de la quinciañera"
       },
       {
-        id: "3",
+        id: "23-1",
         filter: "degrees",
         name: "3",
         url: "#",
         price: "9000",
         detail:"Nombre del graduado"
+      },
+      {
+        id: "24-1",
+        filter: "babyShower",
+        name: "3",
+        url: "#",
+        price: "9000",
+        detail:"Nombre del bebe"
+      },
+      {
+        id: "25-1",
+        filter: "birthday",
+        name: "3",
+        url: "#",
+        price: "9000",
+        detail:"Nombre del cumpleañero"
+      },
+      {
+        id: "26-1",
+        filter: "baptisms",
+        name: "3",
+        url: "#",
+        price: "9000",
+        detail:"Nombre del cumpleañero"
+      },
+      {
+        id: "27-1",
+        filter: "firstCommunions",
+        name: "3",
+        url: "#",
+        price: "9000",
+        detail:"Nombre del cumpleañero"
       }
+]
+
+
+export const dataDetail =[
+  {
+    // birthday, 
+      id: "21-1",
+      filter: "birthday",
+      name: "Detalle de cumpleaños",
+      url: "",
+      price: "10000",
+      detail:" Nombre del"
+    }
+]
+
+export const dataSublimationPrints =[
+  {
+    // birthday, 
+      id: "21-1",
+      filter: "birthday",
+      name: "Estampado de Camisetas",
+      url: "",
+      price: "10000",
+      detail:"Nombre de la camiseta"
+    }
 ]

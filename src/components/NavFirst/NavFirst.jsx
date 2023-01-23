@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import logo from "../../assets/logo.png"
-import cart from "../../assets/carrito-de-compras.png"
+import cart from "../../assets/cart.png"
 import styles from './Nav.module.css'
 export const NavFirst = () => {
   return (
