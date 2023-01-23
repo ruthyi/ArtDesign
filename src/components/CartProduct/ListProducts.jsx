@@ -18,14 +18,17 @@ export const ListProducts = () => {
 
         } else {
             const mensaje = `
-            Buen día, me encuentro interesad@ en comprar los siguientes productos
+            Buen día, me encuentro interesad@ en comprar los siguientes productos:
             __________________________________________________________________________________________________________
             ${products.map(item => 
-            `* Categoria:  ${item.nameCategory}
-            * Codigo del Productos:  ${item.id}
+            `
+            * Categoría:  ${item.nameCategory}
+            * Código del Productos:  ${item.id}
             * Personalización:  ${item.name}
             * Cantidad:  ${item.count}
-            * Subtotal :  ${item.finishPrice} `)}
+            * Subtotal :  ${item.finishPrice} 
+            ------------------------------------------------------------------------------------------------------------
+            `)}
             ____________________________________________________________________________________________________________
             Valor Total del producto ${x}`;
 
