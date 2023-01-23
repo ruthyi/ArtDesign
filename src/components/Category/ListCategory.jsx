@@ -46,7 +46,7 @@ export const ListCategory = (props) => {
                 <CategoryCards lista={lista} />
               </div>
             )
-          } else if (nameFilter == "baptisms" && lista.filter == "birthday") {
+          } else if (nameFilter == "baptisms" && lista.filter == "baptisms") {
             return (
               <div key={lista.id}>
                 <CategoryCards lista={lista} />

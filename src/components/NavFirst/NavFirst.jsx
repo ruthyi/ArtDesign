@@ -3,7 +3,12 @@ import { Outlet, Link } from 'react-router-dom'
 import logo from "../../assets/logo.png"
 import cart from "../../assets/cart.png"
 import styles from './Nav.module.css'
+import { useSelector } from 'react-redux'
+import { useState } from 'react'
 export const NavFirst = () => {
+
+
+
   return (
         <nav className={styles.firstNav}>
         <ul className={styles.firstNavUl}>
@@ -23,6 +28,7 @@ export const NavFirst = () => {
                 <Link to="/sublimationPrint">Sublimación y Estampados</Link>
             </li>
             <li>
+                <div></div>
                 <Link to="/shopping-cart"><img src={cart} alt="carrito de compras" /></Link>
             </li>
         </ul>

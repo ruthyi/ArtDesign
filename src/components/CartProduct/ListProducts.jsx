@@ -12,6 +12,27 @@ export const ListProducts = () => {
     const AddTotal = (finishPrice) => {
         x += parseInt(finishPrice);
     }
+    const handleEnviar = () => {
+        // const { product: { name, count, price, finishPrice, id, nameCategory, url } } = props;
+        if (Object.entries(products).length === 0) {
+
+        } else {
+            const mensaje = `
+            Buen día, me encuentro interesad@ en comprar los siguientes productos
+            __________________________________________________________________________________________________________
+            ${products.map(item => 
+            `* Categoria:  ${item.nameCategory}
+            * Codigo del Productos:  ${item.id}
+            * Personalización:  ${item.name}
+            * Cantidad:  ${item.count}
+            * Subtotal :  ${item.finishPrice} `)}
+            ____________________________________________________________________________________________________________
+            Valor Total del producto ${x}`;
+
+            const url = `https://api.whatsapp.com/send?phone=573123966824&text=${encodeURIComponent(mensaje)}`;
+            window.open(url,'_blank');
+        }
+    }
 
     return (
         <div className={styleProduct.containerProducts}>
@@ -32,7 +53,7 @@ export const ListProducts = () => {
                 <h3>Total</h3>
                 <h3>$ {x}</h3>
             </div>
-            <button className={styleProduct.buy}>
+            <button onClick={handleEnviar} className={styleProduct.buy}>
                 Concretar la compra
             </button>
 
