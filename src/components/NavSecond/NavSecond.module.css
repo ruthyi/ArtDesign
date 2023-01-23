@@ -7,7 +7,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows:minmax(36px, auto);
 }
-.secondtNavUl li {
+.secondtNavUl li , .secondtNavUlSublimation li, .secondtNavUlDetail li {
     list-style: none;
     font-family: 'Moon Dance';
     font-style: normal;
@@ -22,7 +22,17 @@
 .secondtNavUl  li:last-child{
     grid-column: 1 / 4;
 }
-.secondtNavUl a:hover{
+.secondtNavUlSublimation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows:minmax(36px, auto);
+}
+.secondtNavUlDetail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:minmax(36px, auto);
+}
+.secondtNavUl a:hover, .secondtNavUlDetail a:hover, .secondtNavUlSublimation a:hover {
     -webkit-text-stroke: 0.5px var(--border-txt-title);
 }
 @media screen and (min-width:744px) and (max-width:1439px) {

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import styleForm from './FormProductCard.module.css'
 import { addTask } from '../../features/tasks/taskSlice';
-import photo1 from "../../assets/gif.gif"
 import Swal from 'sweetalert2'
 
 function CalculatorPrice(con, price) {
@@ -74,20 +73,20 @@ export const FormProductCard = (props) => {
         e.preventDefault();
         console.log(card)
         dispatch(addTask(card))
-        Swal.fire({
-            text: 'Producto Agregado al Carrito',
-            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2Fcart.png?alt=media&token=9fb689d7-0ca5-4f0e-85af-2a63a3656d82',
-            imageWidth: 50,
-            imageHeight: 50,
-            imageAlt: 'Shopping Cart',
-            background:'#000000'
-          })
         // Swal.fire({
-        //     icon: 'success',
-        //     title: 'Producto Agregado al Carrito',
-        //     showConfirmButton: false,
-        //     timer: 1500
+        //     text: 'Producto Agregado al Carrito',
+        //     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2Fcart.png?alt=media&token=9fb689d7-0ca5-4f0e-85af-2a63a3656d82',
+        //     imageWidth: 50,
+        //     imageHeight: 50,
+        //     imageAlt: 'Shopping Cart',
+        //     background:'#000000'
         //   })
+        Swal.fire({
+            icon: 'success',
+             title: 'Producto Agregado al Carrito',
+             showConfirmButton: false,
+             timer: 1500
+           })
 
     }
     const handleChangeIncrement = () => {
