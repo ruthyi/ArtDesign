@@ -36,20 +36,22 @@ export const FormProductCard = (props) => {
 
 
     const [card, setCard] = useState({
-        name: "",
-        count: "",
-        price: "",
-        finishPrice: "",
-        id: "",
-        nameCategory: "",
-        url: ""
+        name: detail,
+        count: counter,
+        price: price,
+        finishPrice: price,
+        id: id,
+        nameCategory: name,
+        url: url
 
     })
     const handleChange = event => {
         let con = parseInt(counter);
         if (event.target.name == "count") {
-            con = event.target.value;
-            console.log(con);
+            if (event.target.value > 0) {
+                con = event.target.value;
+            }
+            // console.log(con);
         }
         let operacion = CalculatorPrice(con, price);
 
@@ -71,7 +73,7 @@ export const FormProductCard = (props) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(card)
+        console.log(card);
         dispatch(addTask(card))
         // Swal.fire({
         //     text: 'Producto Agregado al Carrito',
@@ -83,15 +85,15 @@ export const FormProductCard = (props) => {
         //   })
         Swal.fire({
             icon: 'success',
-             title: 'Producto Agregado al Carrito',
-             showConfirmButton: false,
-             timer: 1500
-           })
+            title: 'Producto Agregado al Carrito',
+            showConfirmButton: false,
+            timer: 1500
+        })
 
     }
     const handleChangeIncrement = () => {
         let con = parseInt(counter) + 1;
-        let operacion = CalculatorPrice(counter, price)
+        let operacion = CalculatorPrice(con, price)
         setCard({
             ...card,
             count: counter,
@@ -108,7 +110,7 @@ export const FormProductCard = (props) => {
     const handleChangeDecrement = () => {
         let con = parseInt(counter) - 1;
         if (con >= 1) {
-            let operacion = CalculatorPrice(counter, price)
+            let operacion = CalculatorPrice(con, price)
             setCard({
                 ...card,
                 count: counter,

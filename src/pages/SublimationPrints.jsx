@@ -13,7 +13,7 @@ export const SublimationPrints = () => {
         <ButtonQuote/>
       </section>
       <h1 className='cardPageH1'>Sublimación y Estampados</h1>
-      <p className='cardPageP'>Usamos papeleria fina de la mas alta calidad</p>
+      <p className='cardPageP'>Usamos productos de la mas alta calidad</p>
       <NavSecondSublimation/>
       
 

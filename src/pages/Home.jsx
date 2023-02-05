@@ -6,6 +6,8 @@ import { ButtonQuote } from '../components/Button/ButtonQuote';
 import { Category } from '../components/Category/Category';
 import { Contact } from '../components/Contact/Contact';
 import { ButtonLastQuoye } from '../components/Button/ButtonLastQuoye';
+
+
 export const Home = () => {
   return (
    <div className='home'>

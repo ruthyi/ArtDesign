@@ -10,8 +10,12 @@
     font-family: 'Niconne', cursive;
     font-size: 32px;
     color: var(--txt-cards);
-    -webkit-text-stroke: 1px var(--bg-header-footer);
+    /* -webkit-text-stroke: 1px var(--bg-header-footer); */
     margin-bottom: 28px;
+    text-shadow: -1px -1px 0 var(--bg-header-footer), 0 -1px 0 var(--bg-header-footer),
+    1px -1px 0 var(--bg-header-footer), 1px 0 0 var(--bg-header-footer),
+    1px 1px 0 var(--bg-header-footer), 0 1px 0 var(--bg-header-footer),
+    -1px 1px 0 var(--bg-header-footer), -1px 0 0 var(--bg-header-footer);
 }
 
 .containerCategory div:nth-child(2) {
@@ -72,12 +76,14 @@
 
 /* -----------CategoryCards------------- */
 .containerCards {
+    width: 100%;
     background: var(--txt-cards);
     padding: 20px 0px;
 }
 
 
 .categoryCards {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     margin: auto;
     margin-bottom: 10px;
     padding: 0px 12px;
@@ -89,6 +95,9 @@
     border: 2px solid var(--border-txt-title);
     border-radius: 20px;
 }
+.categoryCards:hover{
+    box-shadow: 0 0 10px rgba(217, 0, 255, 0.7);
+}
 
 .categoryCards div>img {
     width: 146px;
@@ -97,6 +106,7 @@
 }
 
 .categoryCards div {
+    
     margin: auto;
 }
 
@@ -107,7 +117,10 @@
     line-height: 24px;
     text-align: center;
     color: var(--text-color-nav);
-    -webkit-text-stroke: 0.5px var(--bg-header-footer);
+    text-shadow: -1px -1px 0 var(--bg-header-footer), 0 -1px 0 var(--bg-header-footer),
+    1px -1px 0 var(--bg-header-footer), 1px 0 0 var(--bg-header-footer),
+    1px 1px 0 var(--bg-header-footer), 0 1px 0 var(--bg-header-footer),
+    -1px 1px 0 var(--bg-header-footer), -1px 0 0 var(--bg-header-footer);
 }
 
 .divCategoricardP {
@@ -137,3 +150,33 @@
     }
     
   }
+
+  /* paginacion */
+
+  .sectioncontainerCards {
+    width: 100%;
+    list-style: none;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+  
+ .sectioncontainerCards ul{
+    color: black;
+    width: 320px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Moon Dance';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    border-bottom: 2px solid var( --txt-cards);
+    -webkit-text-stroke: 0.5px var(--txt-hechos-border-nav);
+    padding-bottom: 20px ;
+ }

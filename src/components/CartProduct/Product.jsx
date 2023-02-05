@@ -17,12 +17,15 @@ export const Product = (props) => {
   const handleDelete = (id) => {
     dispatch(deleteTask(id))
     Swal.fire({
-      text: 'Producto Eliminado del Carrito',
+      icon: 'success',
+      title: 'Producto Eliminado del Carrito',
+      showConfirmButton: false,
+      timer: 1500,
       imageUrl: 'https://firebasestorage.googleapis.com/v0/b/my-projectstorage-7b2b9.appspot.com/o/ArteYDise%C3%B1o%2Fcart.png?alt=media&token=9fb689d7-0ca5-4f0e-85af-2a63a3656d82',
       imageWidth: 50,
       imageHeight: 50,
       imageAlt: 'Shopping Cart',
-      background:'#000000'
+      background: '#000000'
     })
   }
   const handleUpdate = (e) => {
@@ -57,7 +60,7 @@ export const Product = (props) => {
             <button onClick={() => handleUpdateCountIncrement(id)}>+</button>
           </div>
 
-            <h4>$ {finishPrice}</h4>
+          <h4>$ {finishPrice}</h4>
 
         </div>
 

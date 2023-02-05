@@ -33,10 +33,21 @@ function CalculatorPrice(con, price) {
 
 const userSlice = createSlice({
     name: "tasks",
-    initialState:[],
+    initialState: [],
     reducers: {
         addTask: (state, action) => {
-            state.push(action.payload);
+            const { name, count, price, finishPrice, id, nameCategory, url } = action.payload;
+            const foundTask = state.find((task) => task.id === id);
+            if (foundTask) {
+                foundTask.name = name;
+                foundTask.count = count;
+                foundTask.price = price;
+                foundTask.finishPrice = finishPrice;
+            } else {
+                console.log(action);
+                state.push(action.payload);
+            }
+
         },
         editTask: (state, action) => {
             const { id, name } = action.payload;
@@ -44,7 +55,7 @@ const userSlice = createSlice({
             if (foundTask) {
                 foundTask.name = name;
             }
-            console.log(state);
+            // console.log(state);
         },
         deleteTask: (state, action) => {
             const foundTask = state.find((task) => task.id === action.payload);
@@ -63,7 +74,7 @@ const userSlice = createSlice({
         editCounterDecrement: (state, action) => {
             const foundTask = state.find((task) => task.id === action.payload);
             if (foundTask) {
-                if (parseInt(foundTask.count)> 1) {
+                if (parseInt(foundTask.count) > 1) {
                     foundTask.count = parseInt(foundTask.count) - 1;
                     const answer = CalculatorPrice(foundTask.count, foundTask.price);
                     foundTask.finishPrice = answer + ""

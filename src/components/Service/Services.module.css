@@ -1,0 +1,50 @@
+.btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    padding-top: 20px;
+    border-radius: 20px;
+    background: url("../../assets/Card/carrusel/carruselOther/2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 313px, 165px;
+}
+.btn1, .btn2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin: auto;
+    width: 313px;
+    height: 165px;
+    border-radius: 20px;
+    font-family: 'Niconne', cursive;
+    font-size: 32px;
+    color: var(--txt-cards);
+    /* -webkit-text-stroke: 1px var(--bg-header-footer); */
+    margin-bottom: 28px;
+    text-shadow: -1px -1px 0 var(--bg-header-footer), 0 -1px 0 var(--bg-header-footer),
+    1px -1px 0 var(--bg-header-footer), 1px 0 0 var(--bg-header-footer),
+    1px 1px 0 var(--bg-header-footer), 0 1px 0 var(--bg-header-footer),
+    -1px 1px 0 var(--bg-header-footer), -1px 0 0 var(--bg-header-footer);
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: url("../../assets/Card/carrusel/carruselOther/6.jpg");
+    background-repeat: no-repeat;
+    background-size: 313px, 165px;
+}
+.btn2 a:link,.btn1 a:link,
+.btn2 a:visited,.btn1 a:visited {
+  color: var(--text-color-nav);
+  text-decoration: none;
+}
+
+.btn1 :hover, .btn2 :hover {
+    color: var(--bg-header-footer);
+    text-shadow: -1px -1px 0 var(--txt-cards), 0 -1px 0 var(--txt-cards),
+    1px -1px 0 var(--txt-cards), 1px 0 0 var(--txt-cards),
+    1px 1px 0 var(--txt-cards), 0 1px 0 var(--txt-cards),
+    -1px 1px 0 var(--txt-cards), -1px 0 0 var(--txt-cards);
+}

@@ -78,7 +78,19 @@ input {
     font-size: 12px;
     line-height: 21px;
     color: var(--text-color-nav);
-    -webkit-text-stroke: 0.7px var(--bg-header-footer);
+    text-shadow: -1px -1px 0 var(--bg-header-footer), 0 -1px 0 var(--bg-header-footer),
+    1px -1px 0 var(--bg-header-footer), 1px 0 0 var(--bg-header-footer),
+    1px 1px 0 var(--bg-header-footer), 0 1px 0 var(--bg-header-footer),
+    -1px 1px 0 var(--bg-header-footer), -1px 0 0 var(--bg-header-footer);
+
+}
+.btnAddCart:hover{
+    color: var(--bg-header-footer);
+    text-shadow: -1px -1px 0 var(--text-color-nav), 0 -1px 0 var(--text-color-nav),
+    1px -1px 0 var(--text-color-nav), 1px 0 0 var(--text-color-nav),
+    1px 1px 0 var(--text-color-nav), 0 1px 0 var(--text-color-nav),
+    -1px 1px 0 var(--text-color-nav), -1px 0 0 var(--text-color-nav);
+    box-shadow: 0 0 10px rgba(217, 0, 255, 0.7);
 }
 
 .nota {
@@ -87,7 +99,7 @@ input {
     font-size: 5px;
     line-height: 6px;
     text-align: justify;
-    color: rgba(52, 17, 0, 0.5);
+    color: rgba(52, 17, 0);
 
 }
 .containerInput input{

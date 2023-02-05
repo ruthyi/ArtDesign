@@ -13,7 +13,7 @@ export const Details = () => {
         <ButtonQuote/>
       </section>
       <h1 className='cardPageH1'>Detalles Familiares y Empresariales</h1>
-      <p className='cardPageP'>Usamos papeleria fina de la mas alta calidad</p>
+      <p className='cardPageP'>Usamos productos de la mas alta calidad</p>
       <NavSecondDetail/>
       
 

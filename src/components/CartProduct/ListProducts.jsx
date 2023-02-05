@@ -19,7 +19,7 @@ export const ListProducts = () => {
         } else {
             const mensaje = `
             Buen día, me encuentro interesad@ en comprar los siguientes productos:
-            __________________________________________________________________________________________________________
+            ________________________________________
             ${products.map(item => 
             `
             * Categoría:  ${item.nameCategory}
@@ -27,9 +27,9 @@ export const ListProducts = () => {
             * Personalización:  ${item.name}
             * Cantidad:  ${item.count}
             * Subtotal :  ${item.finishPrice} 
-            ------------------------------------------------------------------------------------------------------------
+            ----------------------------------------
             `)}
-            ____________________________________________________________________________________________________________
+            _________________________________________
             Valor Total del producto ${x}`;
 
             const url = `https://api.whatsapp.com/send?phone=573209972620&text=${encodeURIComponent(mensaje)}`;

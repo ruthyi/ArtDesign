@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 * {
   margin: 0;
@@ -26,7 +27,12 @@ body {
   width: auto;
   height: 100%;
 }
-
+#root, .App{
+  height: 100%;
+}
+ .App{
+  margin: auto;
+}
 a:link,
 a:visited {
   text-decoration: none;
@@ -58,14 +64,18 @@ a:visited {
   font-family: 'Pacifico';
   font-size: 24px;
   color: var(--txt-hechos-border-nav);
-  -webkit-text-stroke: 1px var(--bg-btn);
+  text-shadow: -1px -1px 0 var(--bg-btn), 0 -1px 0 var(--bg-btn),
+    1px -1px 0 var(--bg-btn), 1px 0 0 var(--bg-btn),
+    1px 1px 0 var(--bg-btn), 0 1px 0 var(--bg-btn),
+    -1px 1px 0 var(--bg-btn), -1px 0 0 var(--bg-btn);
+
 }
 
 .whoIs :last-child {
-  font-family: 'Moon Dance';
+  font-family: 'Public Sans';
   font-size: 20px;
   color: var(--bg-header-footer);
-  -webkit-text-stroke: 0.5px var(--bg-header-footer);
+  
 }
 
 .btn-last {
@@ -110,7 +120,7 @@ a:visited {
 }
 
 .cardPageP {
-  font-family: 'Moon Dance';
+  font-family: 'Public Sans';
   font-size: 15px;
   line-height: 20px;
   text-align: center;
@@ -139,4 +149,36 @@ a:visited {
   line-height: 44px;
   color: var(--bg-header-footer);
   -webkit-text-stroke: 0.8px  var(--border-txt-title);
+}
+section{
+  height: 100%;
+}
+
+/* Other Services */
+.sectionService{
+  width: 100%;
+  background: white;
+  margin: auto;
+}
+.containerService{
+  margin: auto;
+
+}
+
+@media screen and (min-width:744px) and (max-width:1439px) {
+  .containerService {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .containerService {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
 }

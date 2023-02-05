@@ -1,65 +1,85 @@
 .quote {
-    font-family: 'Pacifico';
-    font-style: normal;
-    font-size: 14px;
-    background: var(--bg-btn);
-    list-style: none;
-    width: 62px;
-    height: 30px;
-    border-radius: 20px;
-    -webkit-text-stroke: 0.3px var(--bg-header-footer);
-    transition: 0.5s all;
+  font-family: "Pacifico";
+  font-style: normal;
+  font-size: 14px;
+  background: var(--bg-btn);
+  list-style: none;
+  width: 62px;
+  height: 30px;
+  border-radius: 20px;
+  text-shadow: -1px -1px 0 var(--bg-header-footer),
+    0 -1px 0 var(--bg-header-footer), 1px -1px 0 var(--bg-header-footer),
+    1px 0 0 var(--bg-header-footer), 1px 1px 0 var(--bg-header-footer),
+    0 1px 0 var(--bg-header-footer), -1px 1px 0 var(--bg-header-footer),
+    -1px 0 0 var(--bg-header-footer);
+  transition: 0.5s all;
 }
 
 .quote:hover {
-    -webkit-text-stroke: 0.1px var(--txt-cards);
-    -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
-    box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+  border: none;
+  text-shadow: -1px -1px 0 var(--txt-cards), 0 -1px 0 var(--txt-cards),
+    1px -1px 0 var(--txt-cards), 1px 0 0 var(--txt-cards),
+    1px 1px 0 var(--txt-cards), 0 1px 0 var(--txt-cards),
+    -1px 1px 0 var(--txt-cards), -1px 0 0 var(--txt-cards);
+  -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+  box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
 }
 
 .quote a:link,
 .quote a:visited {
-    color: var(--text-color-nav);
-    text-decoration: none;
+  color: var(--text-color-nav);
+  text-decoration: none;
 }
 
-@media screen and (min-width:1440px) {
-    .quote {
-        width: 117px;
-        height: 36px;
-        font-size: 22px;
-        padding-bottom: 10px;
-        -webkit-text-stroke: 0.5px var(--bg-header-footer);
-    }
+@media screen and (min-width: 1440px) {
+  .quote {
+    width: 117px;
+    height: 36px;
+    font-size: 22px;
+    padding-bottom: 10px;
+    text-shadow: -1px -1px 0 var(--bg-header-footer),
+      0 -1px 0 var(--bg-header-footer), 1px -1px 0 var(--bg-header-footer),
+      1px 0 0 var(--bg-header-footer), 1px 1px 0 var(--bg-header-footer),
+      0 1px 0 var(--bg-header-footer), -1px 1px 0 var(--bg-header-footer),
+      -1px 0 0 var(--bg-header-footer);
+  }
 
-    .quote:hover {
-        -webkit-text-stroke: 0.5px var(--txt-cards);
-    }
+  .quote:hover {
+    text-shadow: -1px -1px 0 var(--txt-cards), 0 -1px 0 var(--txt-cards),
+      1px -1px 0 var(--txt-cards), 1px 0 0 var(--txt-cards),
+      1px 1px 0 var(--txt-cards), 0 1px 0 var(--txt-cards),
+      -1px 1px 0 var(--txt-cards), -1px 0 0 var(--txt-cards);
+  }
 }
 
 .lastQuote {
-    font-family: 'Pacifico';
-    font-size: 25px;
-    line-height: 44px;
-    width: 179px;
-    height: 50px;
-    border-radius: 20px;
-    -webkit-text-stroke: 0.8px var(--txt-cards);
-    background: var(--bg-btn);
-    margin-bottom: 28px;
-    transition: 0.5 all;
+  font-family: "Pacifico";
+  font-size: 25px;
+  line-height: 44px;
+  width: 179px;
+  height: 50px;
+  border-radius: 20px;
+  text-shadow: -1px -1px 0 var(--txt-cards), 0 -1px 0 var(--txt-cards),
+    1px -1px 0 var(--txt-cards), 1px 0 0 var(--txt-cards),
+    1px 1px 0 var(--txt-cards), 0 1px 0 var(--txt-cards),
+    -1px 1px 0 var(--txt-cards), -1px 0 0 var(--txt-cards);
+  background: var(--bg-btn);
+  margin-bottom: 28px;
+  transition: 0.5 all;
 }
 
 .lastQuote a:link,
 .lastQuote a:visited {
-    color: var(--text-color-nav);
-    text-decoration: none;
+  color: var(--text-color-nav);
+  text-decoration: none;
 }
 
 .lastQuote:hover {
-    -webkit-text-stroke: 1px var(--txt-hechos-border-nav);
-    -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
-    box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+
+  text-shadow: -1px -1px 0 var(--txt-hechos-border-nav), 0 -1px 0 var(--txt-hechos-border-nav),
+    1px -1px 0 var(--txt-hechos-border-nav), 1px 0 0 var(--txt-hechos-border-nav),
+    1px 1px 0 var(--txt-hechos-border-nav), 0 1px 0 var(--txt-hechos-border-nav),
+    -1px 1px 0 var(--txt-hechos-border-nav), -1px 0 0 var(--txt-hechos-border-nav);
+  -webkit-box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
+  box-shadow: 0px 0px 19px -1px var(--bg-header-footer);
 }
-
-

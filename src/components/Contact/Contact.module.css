@@ -4,7 +4,11 @@
     font-size: 25px;
     line-height: 44px;
     color: var(--bg-header-footer);
-    -webkit-text-stroke: 1px var(--border-txt-title);
+    text-shadow: -1px -1px 0 var(--border-txt-title), 0 -1px 0 var(--border-txt-title),
+    1px -1px 0 var(--border-txt-title), 1px 0 0 var(--border-txt-title),
+    1px 1px 0 var(--border-txt-title), 0 1px 0 var(--border-txt-title),
+    -1px 1px 0 var(--border-txt-title), -1px 0 0 var(--border-txt-title);
+
     margin-bottom: 28px;
 }
 
@@ -14,6 +18,7 @@
     font-size: 20px;
     line-height: 27px;
     color: var(--bg-header-footer);
+    
     -webkit-text-stroke: 1px var(--bg-header-footer);
 }
 .containerContact div:nth-child(3) p:last-child {
