@@ -26,6 +26,8 @@ html,
 body {
   width: auto;
   height: 100%;
+  
+
 }
 #root, .App{
   height: 100%;
@@ -136,11 +138,13 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  min-height: calc(100vh - 100px - 100px);
+
 }
 
 .shoppingCartImg {
+  height: auto;
   width: 100px;
-  height: 100px;
 }
 
 .shoppingCart h1 {

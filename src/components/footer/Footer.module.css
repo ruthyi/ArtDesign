@@ -1,6 +1,7 @@
 .containerFooter{
     background: var(--bg-header-footer);
     width: auto;
+    height: 100px;
     padding: 20px 20px;
     display: flex;
     justify-content: space-evenly;
